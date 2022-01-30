@@ -1,0 +1,505 @@
+*{
+    margin: 0; padding: 0;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-delay: 0;
+}
+
+/* HEADER PART */
+.header{
+    width: 100%; height: 80vh;
+    background-image: url('./Images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 80px black;
+    display: flex; flex-direction: column;
+}
+.header .menu-container{
+    width: 100%; height: 60px;
+    background-color: rgb(36, 11, 0);
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header .menu-container:hover{
+    box-shadow: 0px 0px 20px rgb(36, 11, 0);
+}
+.header .menu-container .menu-brand{
+    width: 20%; height: 60px;
+    padding: 6px 30px 68px 16px;
+    background-color: rgb(139, 38, 38);
+    border-radius: 0px 0px 50px 0px;
+    color: white; font-size: 30px;
+    text-decoration: none;
+    font-family: 'Rubik Beastly', cursive;
+    font-weight: 400;
+}
+.header .menu-container .menu-brand:hover{
+    text-shadow: 0px 0px 8px rgb(51, 20, 0);
+}
+.header .menu-container .menu-bar{
+    width: 80%; height: 60px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: right;
+}
+.header .menu-container .menu-bar .nav-item a{
+    padding: 10px 4px 22px 4px; margin: 20px 14px;
+    color: white;
+    font-size: 26px; font-weight: 600;
+    font-family: 'Twinkle Star', cursive;
+    text-align: center; 
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.header .menu-container .menu-bar .active-link a{
+    background-color: rgb(139, 38, 38);
+    border-radius: 0px 0px 50px 50px; 
+    border: 1px solid rgb(139, 38, 38);
+}
+.header .menu-container .menu-bar .nav-item a:hover{
+    color: yellow;
+    text-shadow: 0px 6px 2px rgba(255, 255, 0, 0.541);
+}
+.header .menu-container .menu-bar .active-link a:hover{
+    color: white;
+    padding: 10px 4px 38px 4px;
+    text-shadow: 0px 0px 2px white;
+}
+.header .intro-container{
+    width: 100%; height: 80%;
+    padding: 180px 0px 20px 12%;
+    text-shadow: 0px 0px 8px black;
+}
+.header .intro-container .brand-title{
+    width: 100%;
+    color: white;
+    font-size: 52px;
+    font-weight: 600;
+    margin: 4px 0px;
+    font-family: 'Pacifico', cursive;
+}
+.header .intro-container .brand-title span{
+    height: 50px;
+    padding: 0px 10px;    
+    margin: 0px 4px;
+    background-color: rgb(138, 0, 0);
+    border-radius: 2px 0px 0px 2px;
+}
+.header .intro-container .description-title{
+    width: 100%;
+    color: white; 
+    font-size: 42px;
+    font-weight: 600;
+    font-family: 'Caveat', cursive;
+    margin: 0px 0px 20px 0px;
+}
+.header .intro-container .description-title span{
+    height: 36px;
+    padding: 0px 10px;    
+    margin: 0px 4px;
+    background-color: rgb(255, 136, 0);
+    border-radius: 2px 0px 0px 2px;
+}
+.header .intro-container .product-title{
+    width: 100%;
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 4px 0px;
+    font-family: 'Fredoka One', cursive;
+}
+.header .intro-container .product-title .content::after{
+    content: "Office chairs";
+    animation-name: A;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;   
+}
+@keyframes A {
+    0%{content: "Office tables";}
+    10%{content: "Sofa sets";}
+    20%{content: "Chairs";}
+    30%{content: "Wooden almirahs";}
+    40%{content: "Office sets";}
+    50%{content: "Plywood";}
+    60%{content: "Living room deco";}
+    70%{content: "Luxury Beds";}
+    80%{content: "Decorations and lights";}
+    90%{content: "Bathroom essentials";}  
+    100%{content: "Dining sets";}  
+}
+.header .intro-container .product-title:hover, .header .intro-container .brand-title:hover, .header .intro-container .description-title:hover{
+    color: cyan; text-shadow: 0px 6px 4px rgba(0, 255, 255, 0.671);
+}
+
+.header .button-container{
+    width: 100%; display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header .button-container .button{
+    margin: 20px 4%; padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 12px;
+}
+.header .button-container .button a{
+    color: white; text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN PART */
+.container{
+    width: 100%; height: fit-content;
+    margin: 20px 0px; padding: 10px 0px;
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container:hover{
+    box-shadow: 0px 0px 60px black;
+}
+.container h2{
+    width: 100%; height: fit-content;
+    margin: 40px 0px;
+    font-family: 'Sofia', cursive; font-weight: 600;
+    text-align: center; font-size: 40px;
+    text-decoration: overline;
+}
+.container .featured-card{
+    width: 400px; height: fit-content;
+    border-radius: 10px; margin: 10px;
+    text-align: center;
+}
+.container .featured-card .card-content span{
+    font-size: 12px;
+}
+.container .featured-card .card-content .bg1{
+    background-color: rgb(15, 15, 15);
+}
+.container .featured-card .card-content .bg2{
+    background-color: darkmagenta;
+}
+.container .featured-card .card-content .bg3{
+    background-color: rgb(5, 63, 0);
+}
+.container .featured-card .card-content .bg4{
+    background-color: rgb(141, 0, 24);
+}
+.container .featured-card .card-content .bg5{
+    background-color: rgb(6, 0, 92);
+}
+.container .featured-card .card-content .bg6{
+    background-color: rgb(84, 0, 60);
+}
+.container .category-card{
+    width: 300px; height: fit-content;
+    border-radius: 10px; margin: 10px;
+    text-align: center;
+}
+.container .category-card .card-content span{
+    font-size: 12px;
+}
+.container .category-card .card-content .bg1{
+    background-color: darkviolet;
+}
+.container .category-card .card-content .bg2{
+    background-color: rgb(15, 15, 15);
+}
+.container .category-card .card-content .bg3{
+    background-color: rgb(37, 221, 0);
+}
+.container .discount-card{
+    width: 360px; height: fit-content;
+    border-radius: 10px; margin: 10px;
+    text-align: center;
+}
+.container .discount-card .card-content .bg1{
+    background-color: darkgreen;
+}
+.container .discount-card .card-content .bg2{
+    background-color: orangered;
+}
+.container .discount-card .card-content .bg3{
+    background-color: darkmagenta;
+}
+.container .discount-card .card-content .bg4{
+    background-color: rgb(255, 0, 0);
+}
+.container .discount-card .card-content .bg5{
+    background-color: rgb(6, 0, 94);
+}
+.container .discount-card .card-content .card-description{
+    width: 100%;
+}
+.container .discount-card .card-content .button{
+    width: 60%;
+}
+.container .discount-card .card-content .button a{
+    color: white;
+    text-decoration: none;
+}
+.container .discount-card .card-content .button a span{
+    font-size: 14px;
+}
+.container .discount-card .card-content .btn-group{
+    width: 30%;
+}
+.container .box-shadow:hover{
+    box-shadow: 0px 0px 10px rgb(71, 62, 62);
+}
+.container .discount-card:hover{
+    box-shadow: 0px 0px 20px rgb(0, 60, 255);
+}
+.button-group{
+    width: 92%;
+    margin: 0% 4%;
+    margin: 16px 0px;
+}
+.button-group button a{
+    color: white;
+    text-decoration: none;
+}
+.container .explore-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.discount-card .card-image img, .blog-card .card-image img, .featured-card .card-image img, .category-card .card-image img{
+    border-radius: 10px 10px 0px 0px;
+}
+.quality-container{
+    width: 94%; height: fit-content;
+    background-color: rgba(0, 255, 221, 0.11);
+    margin: 40px 3%;
+    border-radius: 10px;
+    display: flex; flex-direction: row;
+    flex-wrap: wrap; justify-content: center;
+
+}
+.quality-container h2{
+    width: 100%; height: fit-content;
+    margin: 20px 0px;
+    font-family: 'Sofia', cursive; font-weight: 600;
+    text-align: center; font-size: 40px;
+    text-decoration: overline;
+}
+.quality-container .quality-content{
+    width: 50%; height: fit-content;
+    padding: 10px 10px;
+    min-width: 450px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 600;
+}
+.quality-container .quality-image{
+    width: 50%; height: fit-content;
+    min-width: 450px;
+}
+.quality-container .quality-image img{
+    border-radius: 0px 0px 0px 10px;
+}
+.container .team-card{
+    width: 400px; height: fit-content;
+    border-radius: 10px; margin: 10px;
+    text-align: center;
+}
+.container .team-card .team-image{
+    width: 100%; height: fit-content;
+}
+.container .team-card .team-image img{
+    border-radius: 10px 10px 0px 0px;
+
+}
+.container .team-card .team-content{
+    width: 96%; margin: 0px 2%;
+}
+.container .team-card .team-content .bg1{
+    background-color: darkmagenta;
+}
+.container .team-card .team-content .bg2{
+    background-color: rgb(255, 136, 0);
+}
+.container .team-card .team-content .bg3{
+    background-color: rgb(37, 221, 0);
+}
+.container .team-card .team-content .bg4{
+    background-color: rgb(255,0,0);
+}
+.container .team-card .team-content .bg5{
+    background-color: rgb(84, 0, 60);
+}
+.container .customer-gallery-card{
+    width: 100%; height: fit-content;
+    margin: 10px 0px; 
+    padding: 10px;
+    border-radius: 10px;
+}
+.row{
+    width: 100%; height: fit-content;
+    display: flex; flex-direction: row; 
+    flex-wrap: wrap; justify-content: center;
+}
+.row img{
+    width: 200px; height: 160px;
+    border-radius: 4px;
+    padding: 0px 10px 10px 10px;
+    cursor: pointer;
+}
+.row img:hover{
+    opacity: 0.9;
+}
+.container-s {
+    position: relative;
+    display: none;
+  }
+#imgtext {
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    color: black;
+    font-size: 24px;
+  }
+.closebtn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    font-size: 45px;
+    cursor: pointer;
+}
+.container .client-carousel{
+    width: 96%; margin: 0% 2%;
+}
+.container .blog-card{
+    width: 300px; height: fit-content;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.container .blog-card .card-content .bg1{
+    background-color: gold;
+}
+.container .blog-card .card-content .bg2{
+    background-color: rgb(76, 0, 255);
+}
+.container .blog-card .card-content .bg3{
+    background-color: rgb(206, 0, 0);
+}
+.container .blog-card .card-content .bg4{
+    background-color: green;
+}
+.form-container{
+    width: 80%; height: fit-content;
+    border-radius: 18px;
+    border: 1px solid rgb(177, 177, 177);
+    padding: 20px;
+    margin: 20px 10% 20px 10%;
+}
+.form-container form h3{
+    text-align: center;
+    font-family: 'Twinkle Star', cursive;
+}
+.form-container form h3:hover{
+    text-shadow: 0px 0px 2px black, 0px 0px 6px gold;
+    letter-spacing: 1px;
+}
+
+
+/* FOOTER PART */
+.footer{
+    width: 100%; height: fit-content;
+    background-color: rgb(92, 0, 0);
+    padding: 20px 0px;
+    color: white;
+    display: flex; flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.address-card{
+    width: 300px; height: fit-content;
+    margin: 10px;
+}
+.address-card .card-image img{
+    border-radius: 10px 10px 0px 0px;
+}
+.address-card .card-content{
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    color: black;
+}
+.address-card .card-content h4{
+    text-indent: 10px;
+    color: rgb(0, 96, 206);
+}
+.address-card address{
+    font-style: italic;
+    padding-left: 10px;
+    padding-bottom: 4px; 
+    font-weight: 600;
+}
+.link-card{
+    width: 450px; height: fit-content;
+    margin: 10px;
+}
+.link-card .card-content{
+    width: 100%; height: fit-content; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    background-color: white;
+}
+.link-card .card-content:hover{
+    box-shadow: 0px 0px 10px white;
+}
+.link-card .card-content h4{
+    color: rgb(0, 60, 255);
+}
+.link-card .card-content a i{
+    color: rgb(61, 61, 61);
+    font-weight: 800;
+    margin: 8px 10px;
+} 
+.link-card .card-content p{
+    font-weight: 800;
+    color: black;
+}
+.technology-card{
+    width: 300px; height: 294px;
+    background-color: white;
+    margin: 10px; padding: 10px;
+    border-radius: 10px;
+}
+.technology-card .card-content h3{
+    color: rgb(0, 60, 255);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.technology-card .card-content p{
+    color: rgb(15, 15, 15);
+    font-style: italic;
+    font-weight: 800;
+    border-bottom: 1px solid black;
+}
+.technology-card:hover
+{
+    box-shadow: 0px 0px 10px white;
+}
